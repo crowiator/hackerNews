@@ -11,6 +11,10 @@
 		13457A2D29D07D9D0053B5CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13457A2C29D07D9D0053B5CF /* ContentView.swift */; };
 		13457A2F29D07D9E0053B5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13457A2E29D07D9E0053B5CF /* Assets.xcassets */; };
 		13457A3229D07D9E0053B5CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13457A3129D07D9E0053B5CF /* Preview Assets.xcassets */; };
+		13F02A7C29D165C70047BEE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F02A7B29D165C70047BEE4 /* NetworkManager.swift */; };
+		13F02A7E29D166EE0047BEE4 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F02A7D29D166EE0047BEE4 /* PostData.swift */; };
+		13F02A8229D16C5C0047BEE4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F02A8129D16C5C0047BEE4 /* DetailView.swift */; };
+		13F02A8429D16FA20047BEE4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F02A8329D16FA20047BEE4 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		13457A2C29D07D9D0053B5CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13457A2E29D07D9E0053B5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13457A3129D07D9E0053B5CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13F02A7B29D165C70047BEE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		13F02A7D29D166EE0047BEE4 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		13F02A7F29D16B640047BEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		13F02A8129D16C5C0047BEE4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		13F02A8329D16FA20047BEE4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,10 @@
 		13457A2929D07D9D0053B5CF /* hackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				13F02A7F29D16B640047BEE4 /* Info.plist */,
+				13F02A7A29D165980047BEE4 /* Models */,
 				13457A2A29D07D9D0053B5CF /* hackerNewsApp.swift */,
-				13457A2C29D07D9D0053B5CF /* ContentView.swift */,
+				13F02A8029D16C430047BEE4 /* Views */,
 				13457A2E29D07D9E0053B5CF /* Assets.xcassets */,
 				13457A3029D07D9E0053B5CF /* Preview Content */,
 			);
@@ -65,6 +76,25 @@
 				13457A3129D07D9E0053B5CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13F02A7A29D165980047BEE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13F02A7B29D165C70047BEE4 /* NetworkManager.swift */,
+				13F02A7D29D166EE0047BEE4 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13F02A8029D16C430047BEE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13457A2C29D07D9D0053B5CF /* ContentView.swift */,
+				13F02A8129D16C5C0047BEE4 /* DetailView.swift */,
+				13F02A8329D16FA20047BEE4 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F02A7C29D165C70047BEE4 /* NetworkManager.swift in Sources */,
+				13F02A7E29D166EE0047BEE4 /* PostData.swift in Sources */,
 				13457A2D29D07D9D0053B5CF /* ContentView.swift in Sources */,
+				13F02A8429D16FA20047BEE4 /* WebView.swift in Sources */,
+				13F02A8229D16C5C0047BEE4 /* DetailView.swift in Sources */,
 				13457A2B29D07D9D0053B5CF /* hackerNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +304,7 @@
 				DEVELOPMENT_TEAM = N9AKKJC28S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = hackerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +333,7 @@
 				DEVELOPMENT_TEAM = N9AKKJC28S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = hackerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
